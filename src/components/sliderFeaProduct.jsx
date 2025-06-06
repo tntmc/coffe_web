@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Arabica from '../assets/image/Arabica.png'
 import Robusta from '../assets/image/Robusta.png'
 import Vanilla from '../assets/image/Vanilla.png'
-import Excellsa from '../assets/image/excellsa.png'
+import Excellsa from '../assets/image/Excellsa.png'
 
 function sliderAbout() {
   return (

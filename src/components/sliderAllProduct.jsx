@@ -10,7 +10,7 @@ import 'swiper/css';
 import Arabica from '../assets/image/Arabica.png'
 import Robusta from '../assets/image/Robusta.png'
 import Vanilla from '../assets/image/Vanilla.png'
-import Excellsa from '../assets/image/excellsa.png'
+import Excellsa from '../assets/image/Excellsa.png'
 import ArabicaRed from '../assets/image/ArabicaRed.png'
 import ArabicaYellow from '../assets/image/ArabicaYellow.png'
 
