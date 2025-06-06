@@ -13,7 +13,7 @@ import SliderAllProduct from '../components/sliderAllProduct';
 import SliderGallery from '../components/sliderGallery';
 
 // assets
-import Package1 from '../assets/image/package1-transparent.png'
+import Package1 from '../assets/image/Package1-transparent.png'
 
 function Gallery() {
 
