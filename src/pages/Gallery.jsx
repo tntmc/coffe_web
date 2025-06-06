@@ -8,9 +8,9 @@ import './style/Gallery.css'
 
 // components
 import SpotlightCard from '../components/SpotlightCard/SpotlightCard';
-import SliderFeaProduct from '../components/slider/sliderFeaProduct'
-import SliderAllProduct from '../components/slider/sliderAllProduct';
-import SliderGallery from '../components/slider/sliderGallery';
+import SliderFeaProduct from '../components/sliderFeaProduct'
+import SliderAllProduct from '../components/sliderAllProduct';
+import SliderGallery from '../components/sliderGallery';
 
 // assets
 import Package1 from '../assets/image/package1-transparent.png'

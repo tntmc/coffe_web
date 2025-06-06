@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import './style/About.css'
 
 // components
-import SliderAbout from '../components/slider/SliderAbout'
+import SliderAbout from '../components/sliderAbout'
 
 
 function About() {

@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import './style/Commitment.css'
 
 // components
-import SliderCommitment from '../components/slider/sliderCommitment'
+import SliderCommitment from '../components/sliderCommitment'
 
 function Commitment() {
   return (
