@@ -3,7 +3,7 @@ import React from 'react'
 // styling
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import '../../pages/style/Commitment.css'
+import '../pages/style/Commitment.css'
 import 'swiper/css';
 
 

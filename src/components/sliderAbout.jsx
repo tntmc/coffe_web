@@ -3,16 +3,16 @@ import React, {useState, useEffect} from 'react'
 // styling
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import '../../pages/style/About.css'
+import '../pages/style/About.css'
 import 'swiper/css';
 
 // components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // image
-import coffeeVanilla from '../../assets/image/CoffeVanillaBg.png'
-import coffee from '../../assets/image/CoffeBeansMini.png'
-import vanilla from '../../assets/image/VanillaBeansMini.png'
+import coffeeVanilla from '../assets/image/CoffeVanillaBg.png'
+import coffee from '../assets/image/CoffeBeansMini.png'
+import vanilla from '../assets/image/VanillaBeansMini.png'
 
 
 

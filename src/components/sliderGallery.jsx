@@ -3,23 +3,23 @@ import React from 'react'
 // styling
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import '../../pages/style/About.css'
+import '../pages/style/About.css'
 import 'swiper/css';
 
 // components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // image
-import coffeeVanilla from '../../assets/image/CoffeVanillaBg.png'
-import Harvesting from '../../assets/image/Harvesting.png'
-import Drying from '../../assets/image/Drying.png'
-import QualityControl from '../../assets/image/QualityControl.png'
-import Roasting from '../../assets/image/Roasting.png'
+import coffeeVanilla from '../assets/image/CoffeVanillaBg.png'
+import Harvesting from '../assets/image/Harvesting.png'
+import Drying from '../assets/image/Drying.png'
+import QualityControl from '../assets/image/QualityControl.png'
+import Roasting from '../assets/image/Roasting.png'
 
-import Arabica from '../../assets/image/Arabica.png'
-import Robusta from '../../assets/image/Robusta.png'
-import Vanilla from '../../assets/image/Vanilla.png'
-import Excellsa from '../../assets/image/excellsa.png'
+import Arabica from '../assets/image/Arabica.png'
+import Robusta from '../assets/image/Robusta.png'
+import Vanilla from '../assets/image/Vanilla.png'
+import Excellsa from '../assets/image/excellsa.png'
 
 
 function sliderGallery() {

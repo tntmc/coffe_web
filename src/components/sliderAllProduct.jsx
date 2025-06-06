@@ -3,16 +3,16 @@ import React from 'react'
 // styling
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-import '../../pages/style/Gallery.css'
+import '../pages/style/Gallery.css'
 import 'swiper/css';
 
 // image
-import Arabica from '../../assets/image/Arabica.png'
-import Robusta from '../../assets/image/Robusta.png'
-import Vanilla from '../../assets/image/Vanilla.png'
-import Excellsa from '../../assets/image/excellsa.png'
-import ArabicaRed from '../../assets/image/ArabicaRed.png'
-import ArabicaYellow from '../../assets/image/ArabicaYellow.png'
+import Arabica from '../assets/image/Arabica.png'
+import Robusta from '../assets/image/Robusta.png'
+import Vanilla from '../assets/image/Vanilla.png'
+import Excellsa from '../assets/image/excellsa.png'
+import ArabicaRed from '../assets/image/ArabicaRed.png'
+import ArabicaYellow from '../assets/image/ArabicaYellow.png'
 
 // components
 import { Swiper, SwiperSlide } from 'swiper/react';
