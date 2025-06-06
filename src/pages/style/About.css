@@ -1,0 +1,60 @@
+:root {
+  /* --bg-dark: rgb(83, 50, 50); */
+  --bg-dark: rgb(46, 28, 28);
+  --dark-shadow: rgb(0, 0, 0);
+
+  /*slider*/
+  --swiper-slide-bg: rgb(80, 60, 60);
+  --swiper-slide-text-color: white;
+}
+
+#About {
+  background: var(--bg-dark);
+  /* height: 100dvh; */
+  padding: 2em;
+}
+
+#about-title {
+  margin: 0 !important;
+  font-size: 3em;
+}
+
+#about-subtitle {
+  margin: 0 !important;
+  font-size: 1.5em;
+}
+
+.swiper-about {
+  max-width: 90dvw !important;
+}
+
+.swiper-wrapper {
+  max-width: 90dvw !important;
+}
+
+
+.swiper-slide {
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  background: var(--swiper-slide-bg);
+  color: var(--swiper-slide-text-color);
+  border-radius: 1em;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*logic*/
+.expand {
+  display: inline;
+  transition: all 0.3s ease-in-out;
+}
+
+.unexpand{
+  display: none;
+  transition : all 0.3s ease-in-out;
+}

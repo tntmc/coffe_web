@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+  --nav-link: rgb(235, 235, 235);
+  --nav-link-hover: rgb(90, 70, 70);
+  --dropdown: rgb(100, 75, 75);
+
+  --nav-bg: rgb(90, 60, 60);
+  --nav-border: rgb(80, 60, 60);
+  --nav-bg-scroll: rgb(80, 45, 45);
+  --nav-shadow: rgba(15, 15, 15, 0.35) 0 0 1em;
+
+}
+
+.navbar {
+  background: var(--nav-bg);
+  border-radius: 1em;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid var(--nav-border);
+  box-shadow: var(--nav-shadow);
+}
+
+/*class useState*/
+.navbar-scroll {
+  background: var(--nav-bg-scroll);
+  transition: all 0.3s ease-in-out;
+  width: 100% !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 0 !important;
+  box-shadow: var(--nav-shadow);
+}
+
+.nav-link {
+  color: var(--nav-link) !important;
+  font-weight: 400 !important;
+  margin: 0 0.15em;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  font-weight: 600 !important;
+  border-radius: 0.5em;
+  background: var(--nav-link-hover) !important;
+}
+
+/* .nav-link:not(:last-child) {
+  margin-right: 0.5em;
+  font-weight: 600 !important;
+  border-radius: 0.5em;
+  background: var(--nav-link-hover) !important;
+} */
+
+:nav-link:active {
+  font-weight: 600 !important;
+  border-radius: 0.5em;
+  background: var(--nav-link-hover) !important;
+}
+
+.dropdown-menu.show {
+  background: var(--dropdown);
+  border: none ;
+}
+
+.dropdown-item:hover {
+  background: transparent !important;
+}
+
+#toggle-button {
+  border: none !important;
+  color: transparent !important;
+}
+
+#toggle-button svg {
+  color: var(--nav-link) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle-button:hover svg {
+  transform: scale(1.2);
+}
+
+/*language button*/
+.language-button {
+  padding: 0.5em !important;
+  border: none !important;
+  color: var(--nav-link) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media all and (max-width: 991px) {
+  .language-button {
+    display: none !important;
+  }
+  
+  .navbar-brand .img-fluid {
+    margin-left: 0em !important;
+    margin-right: 0.5em !important;
+  }
+
+  .navbar-brand #product-name {
+    font-family: 'Courgette', cursive;
+  }
+}
+
+
+@media all and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .nav-item {
+    width: 100% !important;
+    text-align: start !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-link {
+    padding: 0.5em !important;
+    font-size: 0.75em !important;
+  }
+}

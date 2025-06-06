@@ -1,0 +1,199 @@
+:root {
+  /* --bg-dark: rgb(83, 50, 50); */
+  --bg-dark: rgb(46, 28, 28);
+  /* --bg-dark-20: rgba(83, 50, 50, 0.2); */
+  --bg-dark-20: rgb(46, 28, 28, 0.2);
+  --dark-shadow: rgb(0, 0, 0);
+
+  --card-dark: rgba(26, 26, 26, 0.5);
+  --border-dark: 1px solid rgb(40, 40, 40);
+
+  /*carousel*/
+  --carousel-card-dark: rgb(22, 22, 22);
+  --pagination-shadow: rgba(24, 22, 22, 0.8) 0px 0px 15px;
+  --pagination-border: rgba(235, 235, 235, 0.50);
+  --pagination-border-dark: rgba(61, 61, 61, 0.5);
+
+  /*modal*/
+  --modal-bg: rgba(56, 47, 47, 0.8);
+  --modal-card-bg: rgba(26, 26, 26, 0.8);
+  --modal-card-border: 1px solid rgba(85, 74, 74, 0.5);
+  --modal-card-shadow: rgba(20, 20, 20, 0.8) 0px 0px 15px;
+}
+
+#Gallery {
+  background: linear-gradient(to bottom, var(--dark-shadow), var(--bg-dark-20), var(--dark-shadow)) , url(../../assets/image/Coffe-background2.png);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+  padding-block: 1em ;
+}
+
+.card-spotlight {
+  height: 20em !important;
+}
+
+.card-spotlight h1{
+  font-size: 3em;
+}
+
+#package-image1 {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: -32.5%;
+  left: auto;
+}
+
+/*slider*/
+#card-product {
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+  background: none;
+  padding: 2rem;
+  width: 90% !important;
+}
+
+#card-product .card-header {
+  border: none;
+}
+
+#card-product #slider-product-card{
+  background: var(--carousel-card-dark);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: var(--pagination-shadow);
+  border: var(--border-dark);
+  color: white;
+  transition: all 0.15s ease-in-out;
+}
+
+#card-product #slider-product-card img {
+  width: 100%;
+  height: 12.5em;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  transition-behavior: smooth;
+}
+
+#card-product #slider-product-card img:hover {
+  cursor: pointer;
+  object-fit: contain;
+  box-shadow: var(--pagination-shadow);
+  transform: scale(1.1);
+  margin-block: 0.5em;
+}
+
+
+#card-product #slider-product-card .card-header {
+  justify-self: unset;
+  align-self: unset;
+  text-align: center;
+  gap: 0.5em;
+  justify-content:space-between;
+}
+
+#card-product #slider-product-card .card-header p {
+  border-radius: 1em;
+  border: 1px solid var(--pagination-border-dark);
+}
+
+#card-product #slider-product-card .card-body p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  transition: all 0.3s ease-in-out;
+  transition-behavior: smooth;
+}
+
+#card-product #slider-product-card .card-body .expand p{
+  cursor: pointer;
+  overflow: unset;
+  text-overflow: unset;
+  display: block;
+  -webkit-box-orient: vertical;
+  line-clamp: unset;
+  -webkit-line-clamp: unset;
+}
+
+.modal-content {
+  background: var(--modal-bg);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  border: var(--modal-card-border);
+  box-shadow: var(--modal-card-shadow);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+#exampleModalLabel {
+  color: white;
+}
+
+
+
+
+
+
+/*breakpoint*/
+@media all and (max-width: 1700px) {
+  #package-image1 {
+    width: 65%;
+    height: auto;
+    position: relative;
+    top: -30%;
+    left: auto;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  #package-image1 {
+    width: 75%;
+    height: auto;
+    position: relative;
+    top: -30%;
+    left: auto;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #package-image1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -30%;
+    left: auto;
+  }
+}
+
+@media all and (max-width: 850px) {
+  #package-image1 {
+    display: none;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .card-spotlight {
+    height: auto !important;
+  }
+
+  .card-spotlight h1 {
+    margin-inline: 0em !important;
+  }
+
+  .card-spotlight p {
+    margin-inline: 0em !important;
+  }
+
+  .card-spotlight button {
+    margin-inline: 0em !important;
+  }
+}

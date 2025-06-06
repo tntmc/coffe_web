@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+  --dark-shadow: rgb(0, 0, 0);
+  --alpha-shadow: rgba(0, 0, 0, 0);
+
+  --card-bg-dark: rgb(41, 27, 27);
+  --card-text-light: rgb(255, 255, 255);
+  --card-text-dark: rgb(34, 29, 29);
+
+  /* --bg-dark: rgb(83, 50, 50); */
+  --bg-dark: rgb(46, 28, 28);
+  --bg-dark-80: rgba(46, 28, 28, 0.8);
+
+}
+
+footer {
+  background: linear-gradient(to bottom, var(--bg-dark-80), var(--dark-shadow)), url(../../assets/image/Coffe-background1.png)!important;
+  border: none !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+}
+
+/* #footer-image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
+
+
+footer h1 {
+  font-size: 2.5em;
+  font-family: 'Courgette', cursive;
+}
+
+
+footer .card {
+  border: none;
+  background: var(--card-bg-dark);
+  color: var(--card-text-light);
+  /* box-shadow: 0 0 10px var(--dark-shadow), 0 0 20px var(--dark-shadow), 0 0 30px var(--dark-shadow); */
+}
+
+#connected-card {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#connected-card .list-unstyled h5 {
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
+#connected-card .list-unstyled a {
+  font-size: 1em !important;
+  margin-inline: 0.75em;
+  border-radius: 50%;
+  border: none;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(-20deg, rgb(143, 103, 103) 0%, rgb(230, 230, 230) 100%);
+}
+
+#connected-card svg {
+  position: relative !important;
+  top: -3px !important;
+  color: var(--card-text-dark);
+}

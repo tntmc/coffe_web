@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+:root {
+  /* --bg-dark: rgb(83, 50, 50); */
+  --bg-dark: rgb(46, 28, 28);
+  --shadow: rgba(15, 15, 15, 0.35) 0 0 1em;
+
+  --hero-container-bg: linear-gradient(to bottom, rgba(135, 145, 135, 0.4) , rgba(235, 120, 67, 0.8) , rgba(135, 145, 135, 0.4)), url(../src/assets/image/CoffeVanillaBg.png) !important;
+  --hero-container-scroll-bg: linear-gradient(to bottom, rgba(0, 0, 0), rgba(0, 0, 0, 0.2), rgb(0, 0, 0)), url(../src/assets/image/CoffeVanillaBg.png) !important;
+}
+
+#Home {
+  height: 85dvh;
+  display: flex;
+  background: var(--bg-dark);
+  padding-bottom: 2%;
+  padding-top: 4%;
+  display: flex;
+  transition: all 0.25s ease-in-out;
+}
+
+/*class useState*/
+.Home-scroll {
+  height: 100dvh !important;
+  width: 100% !important;
+  transition: all 0.4s ease-in-out;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.hero-container{
+  border: none;
+  width: 98%;
+
+  background: var(--hero-container-bg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+
+  position: relative;
+  border-radius: 1em;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  padding-top: 3em;
+  margin-top: 2.5%;
+  font-family: 'Courgette', cursive;
+}
+
+/* hero text */
+.hero-container h1{
+  transition: all 0.5s ease-in-out;
+  font-size: 6.5em;
+  position: relative;
+  text-align: center;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../src/assets/image/CoffeVanillaBg.png);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+
+   -webkit-text-stroke: 3px rgb(199, 199, 199);
+}
+
+/* hero text nth-child(1) */
+/* .hero-container  #home-card-body div:nth-child(1) {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  right: 5%;
+} */
+
+/* hero text nth-child(2) */
+/* .hero-container  #home-card-body div:nth-child(3) {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  left: 10%;
+} */
+
+.hero-container #home-card-body {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/*class useState*/
+.hero-container-scroll {
+  transition: all 0.4s ease-in-out;
+  width: 100% !important;
+  height: inherit;
+  border: none;
+  border-radius: 0;
+  margin-top: 0 !important;
+  box-shadow: var(--shadow);
+  padding-top: 7%;
+
+  background: var(--hero-container-scroll-bg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* hero text scroll */
+.hero-container-scroll h1 {
+  transition: all 0.6s ease-in-out;
+  font-size: 7em;
+  position: relative;
+  text-align: center;
+  padding-bottom: 1.5%;
+  letter-spacing: 0.10em;
+
+  background: linear-gradient(to bottom, white 50%, rgb(0, 0, 0)) !important;
+
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  color: transparent !important;
+}
+
+/* hero text scroll nth-child(1) */
+/* .hero-container-scroll  #home-card-body div:nth-child(1) {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  right: 20%;
+} */
+
+/* hero text scroll nth-child(2) */
+/* .hero-container-scroll  #home-card-body div:nth-child(3) {
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  left: 20%;
+} */
+
+
+.hero-container-scroll #home-card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container-scroll #home-card-body .index-1{
+  position: relative;
+  right: 60%;
+}
+
+.hero-container-scroll #home-card-body .index-3{
+  position: relative;
+  left: 60%;
+}
+
+/*breaakpoint*/
+@media all and (max-width: 1200px) {
+  .hero-container h1 {
+    font-size: 6em;
+  }
+
+  .hero-container-scroll h1 {
+    font-size: 7em;
+  }
+
+  .hero-container-scroll #home-card-body .index-1{
+    position: relative;
+    right: 40%;
+  }
+
+  .hero-container-scroll #home-card-body .index-3{
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .hero-container h1 {
+    font-size: 5em;
+    -webkit-text-stroke: 2px rgb(199, 199, 199);
+  }
+
+  .hero-container-scroll h1 {
+    font-size: 6em;
+  }
+
+  .hero-container-scroll #home-card-body .index-1{
+    position: relative;
+    right: 20%;
+  }
+
+  .hero-container-scroll #home-card-body .index-3{
+    position: relative;
+    left: 20%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .hero-container #home-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-container #home-card-body div{
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-container h1 {
+    font-size: 4em;
+    -webkit-text-stroke: 1px rgb(199, 199, 199);
+  }
+
+  .hero-container-scroll h1 {
+    font-size: 5em;
+  }
+
+  .hero-container-scroll #home-card-body .index-1{
+    position: relative;
+    right: 0%;
+  }
+
+  .hero-container-scroll #home-card-body .index-3{
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .hero-container-scroll #home-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-container-scroll #home-card-body div{
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-container h1 {
+    font-size: 3em;
+  }
+
+  .hero-container-scroll h1 {
+    font-size: 4em;
+  }
+}
+
+/*breakpoint-height*/
+@media all and (max-height: 600px) {
+  .hero-container-scroll #home-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 4em;
+    margin-top: 10px;
+  }
+
+  .hero-container-scroll #home-card-body div{
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-container h1 {
+    font-size: 3em;
+  }
+
+  .hero-container-scroll h1 {
+    font-size: 4em;
+  }
+
+  .hero-container-scroll #home-card-body .index-1{
+    position: relative;
+    right: 0%;
+  }
+
+  .hero-container-scroll #home-card-body .index-3{
+    position: relative;
+    left: 0%;
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  /* --bg-dark: rgb(83, 50, 50); */
+  --bg-dark: rgb(46, 28, 28);
+  --dark-shadow: rgb(0, 0, 0);
+}
+
+#Commitment {
+  background: var(--bg-dark);
+  /* height: 100dvh; */
+  padding: 2em;
+}
+
+h1 {
+  margin: 0 !important;
+  color: white;
+}
